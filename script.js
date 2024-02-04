@@ -77,3 +77,13 @@ const PlantListing = () => {
 window.addEventListener("load", () => {
   PlantListing();
 });
+
+
+// Toggle menu
+const toggleBtn = document.getElementById('menu');
+const navMobile = document.getElementById('nav-mobile');
+
+toggleBtn.addEventListener('click', () => {
+  navMobile.style.display = (navMobile.style.display === 'none' || navMobile.style.display === "") ? 'block':'none';
+  // toggleBtn.style.display = ;
+})
